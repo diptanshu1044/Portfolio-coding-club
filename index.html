@@ -113,14 +113,9 @@
     background:var(--bg-soft);border:3px solid var(--bg);
     z-index:2;
   }
-  .photo-monogram{
-    display:flex;align-items:center;justify-content:center;
-    background:radial-gradient(circle at 30% 25%, var(--surface-hi), var(--bg-soft));
-  }
-  .photo-monogram span{
-    font-family:var(--mono);font-weight:700;font-size:56px;letter-spacing:1px;
-    background:linear-gradient(135deg, var(--cyan), var(--violet));
-    -webkit-background-clip:text;background-clip:text;color:transparent;
+  .photo-inner img{
+    width:100%;height:100%;object-fit:cover;object-position:center 15%;
+    display:block;
   }
   .photo-scan{position:absolute;inset:6px;border-radius:50%;overflow:hidden;z-index:3;pointer-events:none;}
   .photo-scan::before{
@@ -323,8 +318,8 @@
       </div>
       <div class="photo-col reveal in">
         <div class="photo-ring">
-          <div class="photo-inner photo-monogram" aria-label="Diptanshu Banerjee">
-            <span>DB</span>
+          <div class="photo-inner">
+            <img src="Profile_pic.png" alt="Diptanshu Banerjee" width="208" height="208">
           </div>
           <div class="photo-scan"></div>
           <div class="photo-tag">diptanshu1044</div>
